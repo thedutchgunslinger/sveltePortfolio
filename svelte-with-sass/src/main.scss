@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Stretch';
+    src: url("./STRETCHPRO.OTF");
+}
+
+
+// Variable overrides for bootstrap
+$primary: #F72585;
+$text-color: white;
+$backgroundColor: black;
+
+$headings-font-family: Arial Black;
+$font-family-base:  Arial,Helvetica, sans-serif;
+$h2-font-size: 96px;
+$h1-font-size: 128px;
+$input-focus-border-color: tint-color($primary, 50%);   
+$form-label-font-size: 32px;
+$form-label-color: $backgroundColor;
+$input-btn-font-size: 24px;
+$input-btn-border-width: 3px;
+.btn-primary     {
+    color: $text-color!important;
+}
+form {
+    h2 {
+        color: $backgroundColor;
+    }
+}
+
+
+::-moz-selection {
+    /* Code for Firefox */
+    color: $text-color;
+    background: $primary;
+}
+
+::selection {
+    color: $text-color;
+    background: $primary;
+}
+
+h1, p {
+    color: $text-color;
+}
+
+.outline {
+    -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: $text-color;
+        color: $backgroundColor; 
+}
+.outlineInverse {
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: $backgroundColor;
+    color: $text-color;
+}
+
+.pink {
+    color: $primary;
+}
+
+.jumboText {
+    font-size: 256px;
+    opacity: 50%;
+}
+
+.overlayText{
+    float: right;
+        width: 65%;
+        /*important*/
+        bottom: 21vw;
+        /*important*/
+}
+
+.projectTitle {
+    font-size: 96px
+}
+
+.projectText {
+    font-size: 24px;
+}
+@import "../node_modules/bootstrap/scss/bootstrap";
